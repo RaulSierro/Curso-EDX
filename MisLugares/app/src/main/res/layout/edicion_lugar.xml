@@ -10,16 +10,16 @@
     <TextView
         style="@style/EstiloTexto"
         android:text="@string/app_name"/>
-    <Button android:id="@+id/Button01"
+    <Button android:id="@+id/btMostrarLugares"
         style="@style/EstiloTextoBotones"
         android:text="@string/accion_mostrar"/>
-    <Button android:id="@+id/Button02"
+    <Button android:id="@+id/btPreferencias"
         style="@style/EstiloTextoBotones"
         android:text="@string/accion_preferencias"/>
-    <Button android:id="@+id/Button03"
+    <Button android:id="@+id/btAcercaDe"
         style="@style/EstiloTextoBotones"
         android:text="@string/accion_acerca_de"/>
-    <Button android:id="@+id/Button04"
+    <Button android:id="@+id/btSalir"
         style="@style/EstiloTextoBotones.Salir"
         android:text="@string/accion_salir"/>
 </LinearLayout>

@@ -1,10 +1,12 @@
 package com.masvistas.raulestandar.mavistas;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,6 +16,7 @@ public class MainActivity extends ActionBarActivity {
 
     private EditText entrada;
     private TextView salida;
+    private Button acer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
 
         entrada = (EditText)findViewById(R.id.entrada);
         salida = (TextView)findViewById(R.id.salida);
+        acer = (Button)findViewById(R.id.btAcercaDe);
     }
 
     public void sePulsa(View view){
@@ -33,6 +37,14 @@ public class MainActivity extends ActionBarActivity {
     public void sePulsa0(View view){
 
         entrada.setText(entrada.getText() + (String)view.getTag());
+    }
+
+
+    public void acercaDe(View view){
+
+        Intent i = new Intent(this, AcercaDe.class);
+        startActivity(i);
+
     }
 
 

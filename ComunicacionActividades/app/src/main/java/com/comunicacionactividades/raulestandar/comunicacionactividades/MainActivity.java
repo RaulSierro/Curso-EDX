@@ -1,11 +1,9 @@
-package com.mislugares.raulinvitado.mislugares;
+package com.comunicacionactividades.raulestandar.comunicacionactividades;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -13,16 +11,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.edicion_lugar);
-
-        Button bSalir = (Button)findViewById(R.id.btSalir);
-        bSalir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
+        setContentView(R.layout.activity_main);
     }
 
 
